@@ -1,0 +1,78 @@
+.crypto-table-container {
+    overflow-x: auto;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #2c2c2c;
+    color: #ddd;
+    font-size: 14px;
+}
+
+thead {
+    background-color: #333;
+    color: #ffd700;
+}
+
+th {
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    text-align: left;
+}
+
+th:hover {
+    background-color: #444;
+}
+
+th svg {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #2a2a2a;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #1c1c1c;
+}
+
+tbody tr:hover {
+    background-color: #444;
+}
+
+@media (max-width: 768px) {
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    th svg {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    table {
+        font-size: 10px;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+
+    th svg {
+        font-size: 14px;
+    }
+}
