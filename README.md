@@ -1,6 +1,6 @@
 
-
 # Projeto de Criptomoeda
+![Customer Insights](https://github.com/user-attachments/assets/fe3926da-cab4-409d-b9b9-0bb18f146823)
 
 Este projeto é uma aplicação de criptomoeda que permite aos usuários visualizar informações sobre diferentes criptomoedas, incluindo preços, capitalização de mercado e gráficos históricos. A aplicação utiliza a API CoinGecko para obter dados em tempo real e exibir essas informações de forma intuitiva.
 
