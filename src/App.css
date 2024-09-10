@@ -79,7 +79,7 @@ input {
 }
 
 input::placeholder {
-    color: #000000;
+    color: #ffffff;
 }
 
 input:focus {

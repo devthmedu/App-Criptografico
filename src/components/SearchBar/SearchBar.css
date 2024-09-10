@@ -26,7 +26,7 @@ input {
 }
 
 input::placeholder {
-    color: #bbb;
+    color: #fffdfd;
 }
 
 .search-button,
