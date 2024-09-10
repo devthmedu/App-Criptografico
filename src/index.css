@@ -47,7 +47,7 @@ input, textarea {
 }
 
 input::placeholder, textarea::placeholder {
-    color: #aaa;
+    color: #ffffff;
 }
 
 input:focus, textarea:focus {
