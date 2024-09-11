@@ -1,3 +1,4 @@
+/* Contêiner principal do carrossel */
 .carousal-container {
     width: 100%;
     max-width: 1000px;
@@ -8,8 +9,11 @@
     padding: 20px;
     background-color: #1c1c1c;
     border-radius: 10px;
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse os limites do contêiner */
+    box-sizing: border-box; /* Inclui padding e bordas na largura total */
 }
 
+/* Item do carrossel */
 .carousal-item {
     display: flex;
     flex-direction: column;
@@ -21,12 +25,15 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
     margin: 0 10px;
+    flex-shrink: 0; /* Garante que os itens não encolham */
 }
 
+/* Efeito de hover nos itens do carrossel */
 .carousal-item:hover {
     transform: scale(1.05);
 }
 
+/* Imagem do item do carrossel */
 .carousal-image {
     width: 80px;
     height: 80px;
@@ -36,21 +43,25 @@
     margin-bottom: 10px;
 }
 
+/* Informações do item do carrossel */
 .carousal-info {
     text-align: center;
     color: #fff;
 }
 
+/* Símbolo ou título do item do carrossel */
 .carousal-symbol {
     font-weight: bold;
     margin-bottom: 5px;
 }
 
+/* Preço do item do carrossel */
 .carousal-price {
     font-size: 1.2em;
     color: #ffd700;
 }
 
+/* Estilos responsivos para telas menores */
 @media (max-width: 768px) {
     .carousal-image {
         width: 60px;
@@ -61,6 +72,7 @@
 @media (max-width: 480px) {
     .carousal-item {
         padding: 5px;
+        margin: 0 5px; /* Reduz a margem entre itens para telas muito pequenas */
     }
 
     .carousal-image {

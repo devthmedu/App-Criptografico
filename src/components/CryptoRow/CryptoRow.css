@@ -71,7 +71,7 @@ tr:hover {
 }
 
 .price.up {
-    color: #2ecc71;
+    color: #2ecc71; /* Verde para aumento */
 }
 
 .price.down {

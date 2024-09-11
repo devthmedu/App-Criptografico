@@ -1,9 +1,9 @@
 .crypto-table-container {
     overflow-x: auto;
-    margin: 20px auto; /* Centraliza horizontalmente com margem automática */
-    max-width: 90%; /* Limita a largura máxima da tabela para responsividade */
+    margin: 20px auto;
+    max-width: 90%;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 }
 
 table {
@@ -11,7 +11,7 @@ table {
     border-collapse: collapse;
     background-color: #2c2c2c;
     color: #ffd700;
-    font-size: 16px; /* Aumenta o tamanho da fonte para melhor legibilidade */
+    font-size: 16px;
 }
 
 thead {
@@ -20,7 +20,7 @@ thead {
 }
 
 th {
-    padding: 12px; /* Aumenta o padding para um melhor espaçamento */
+    padding: 14px;
     cursor: pointer;
     position: relative;
     text-align: left;
@@ -35,7 +35,8 @@ th svg {
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 20px; /* Aumenta o tamanho do ícone para maior visibilidade */
+    font-size: 22px;
+    color: #ffd700;
 }
 
 tbody tr:nth-child(even) {
@@ -52,29 +53,58 @@ tbody tr:hover {
 
 @media (max-width: 1024px) {
     table {
-        font-size: 14px; /* Ajusta o tamanho da fonte para tablets e telas maiores de smartphones */
+        font-size: 14px;
     }
 
     th, td {
-        padding: 10px; /* Ajusta o padding para melhorar o layout em telas menores */
+        padding: 12px;
     }
 
     th svg {
-        font-size: 18px;
+        font-size: 20px;
     }
 }
 
 @media (max-width: 768px) {
     table {
+        display: block;
         font-size: 12px;
+        overflow-x: auto;
+        white-space: nowrap;
     }
 
-    th, td {
-        padding: 8px;
+    thead {
+        display: none;
     }
 
-    th svg {
-        font-size: 16px;
+    tbody, tr {
+        display: block;
+        width: 100%;
+    }
+
+    tr {
+        border-bottom: 1px solid #ddd;
+    }
+
+    td {
+        display: block;
+        text-align: right;
+        position: relative;
+        padding-left: 50%;
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 45%;
+        padding-left: 10px;
+        font-weight: bold;
+        text-align: left;
+        color: #ffd700;
+        background-color: #333;
     }
 }
 
@@ -84,10 +114,10 @@ tbody tr:hover {
     }
 
     th, td {
-        padding: 6px;
+        padding: 8px;
     }
 
     th svg {
-        font-size: 14px;
+        font-size: 18px;
     }
 }

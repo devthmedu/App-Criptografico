@@ -12,8 +12,32 @@
     background-color: #1c1c1c;
     color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    padding: 10px 20px;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header .nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.header .nav-links a {
+    color: #ffd700;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.header .nav-links a:hover {
+    color: #ffea00;
+    text-shadow: 0 0 5px rgba(255, 255, 0, 0.6);
 }
 
 .homepage-content {
@@ -23,4 +47,125 @@
     align-items: center;
     justify-content: center;
     padding: 20px;
+    text-align: center;
+}
+
+.homepage-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.homepage-content p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.homepage-content button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.homepage-content button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .header .logo {
+        font-size: 1.3rem;
+    }
+
+    .homepage-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .homepage-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .header .logo {
+        font-size: 1.2rem;
+    }
+
+    .homepage-content h1 {
+        font-size: 2rem;
+    }
+
+    .homepage-content p {
+        font-size: 0.9rem;
+    }
+
+    .header .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header .nav-links {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .homepage-content {
+        padding: 10px;
+    }
+
+    .homepage-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .homepage-content p {
+        font-size: 0.9rem;
+    }
+
+    .homepage-content button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        padding: 10px;
+    }
+
+    .header .logo {
+        font-size: 1rem;
+    }
+
+    .header .nav-links {
+        font-size: 0.9rem;
+    }
+
+    .homepage-content h1 {
+        font-size: 1.2rem;
+    }
+
+    .homepage-content p {
+        font-size: 0.8rem;
+    }
+
+    .homepage-content button {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
 }

@@ -153,3 +153,23 @@
         font-size: 14px;
     }
 }
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.logo img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.logo img:hover {
+    transform: rotate(360deg);
+    box-shadow: 0 0 15px rgba(255, 234, 0, 0.7);
+}
